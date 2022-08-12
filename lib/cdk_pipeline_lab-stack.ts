@@ -10,7 +10,7 @@ export class CdkPipelineLabStack extends Stack {
       pipelineName: 'MyPipeline',
       synth: new ShellStep('Synth', {
         input: CodePipelineSource.connection('tgyanen/CdkPipelineLab', 'main', {
-          connectionArn: 'arn:aws:codestar-connections:us-east-1:034490466543:connection/494116d6-a1e6-4339-bc32-89d69a6c1c59'
+          connectionArn: 'arn:aws:codestar-connections:us-east-2:034490466543:connection/de64904f-3738-4c47-b2a1-98971f51e3be'
         }),
         commands: ['npm ci', 'npm run build', 'npx cdk synth']
       })
